@@ -1,0 +1,128 @@
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #130f0d;
+  color: white;
+
+}
+
+.boards {
+  display: flex;
+  margin-top: 32px;
+}
+
+.board {
+  background: #141316;
+  border: 1px solid #FD951F11;
+  border-radius: 4px;
+
+  margin: 0 16px;
+}
+
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #FD951Fcc;
+}
+
+.board > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board > .header > .total-cards{
+
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 16px;
+  padding: 0 10px 10px;
+}
+
+.low-cards {
+  visibility: hidden;
+}
+
+.dropzone {
+  
+  padding: 16px;
+  min-width: 282px;
+  min-height: 282px;
+}
+
+.card {
+
+  padding: 16px;
+  box-shadow: 0 2px 2px -1px #FD951Fcc;
+  width: 250px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+
+  background: #1A1A1C;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+}
+
+.content {
+  width: 100%;
+}
+
+.date-container {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+
+.date-createdAt {
+  padding-bottom: 5px;
+}
+
+.status {  
+
+  width: 20px;
+  height: 6px;
+  background: gray;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  background: #1A1A1C;
+  
+}
+
+.status.green {
+  background:#23d2ac;
+}
+
+.status.blue {
+  background:#33adff;
+}
+
+.status.red {
+  background:red;
+}
+
+.highlight {
+  background: #FD951F07;
+}
+
+.card, .dropzone {
+  transition: 400ms;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background: #4cd13711;
+}

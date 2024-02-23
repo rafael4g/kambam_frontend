@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Simple Kanban Board</title>
+</head>
+
+<body>
+
+  <div class="boards">
+    <div class="board">
+      <div class="header">
+        <h3>Todo</h3>
+        <span class="total-cards"></span>
+      </div>
+      <div class="dropzone todo">
+        <div class="card" draggable="true">
+          <div class="status green"></div>
+          <div class="card-container">
+            <div class="content">Trabalho 01!</div>
+            <div class="date-container">
+              <div class="date-createdAt">24-01 11:56</div>
+              <div class="date-updatedAt">24-01 11:58</div>
+            </div>
+          </div>
+        </div>
+        <div class="card" draggable="true">
+          <div class="status green"></div>
+          <div class="card-container">
+            <div class="content">Trabalho 02!</div>
+            <div class="date-container">
+              <div class="date-createdAt">24-01 11:56</div>
+              <div class="date-updatedAt"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+      <div class="header">
+        <h3>In Progress</h3>
+        <span class="total-cards"></span>
+      </div>
+      <div class="dropzone in-progress">
+        <div class="card" draggable="true">
+          <div class="status blue"></div>
+          <div class="card-container">
+            <div class="content"> Forum com o time</div>
+            <div class="date-container">
+              <div class="date-createdAt">24-01 11:56</div>
+              <div class="date-updatedAt"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+
+      <div class="header">
+        <h3>Done</h3>
+        <span class="total-cards"></span>
+      </div>
+      <div class="dropzone done">
+        <div class="card" draggable="true">
+          <div class="status red"></div>
+          <div class="card-container">
+
+            <div class="content"> Apresentação de resultados</div>
+            <div class="date-container">
+              <div class="date-createdAt">24-01 11:56</div>
+              <div class="date-updatedAt">24-01 11:56</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
